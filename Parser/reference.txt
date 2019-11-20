@@ -1,0 +1,8 @@
+Liste von Argumenten (args)
+1. NullCheck
+2. check for control char ('/', '-')
+3. Substring without control char
+4. index of '=' -> pos
+5. wenn kein '=' -> parse string to KeyValuePair<lowerInvariant:string,null>
+6. sonst trenne am '=' (links, rechts)
+7. parse KeyValuePair<lowerInvariant von links:string, rechts:string>
