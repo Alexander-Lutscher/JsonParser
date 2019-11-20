@@ -1,14 +1,22 @@
-﻿using Pidgin;
-using static Pidgin.Parser;
-using static Pidgin.Parser<char>;
+﻿using NUnit.Framework;
+using Pidgin;
+
 namespace JsonParser
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            var parser = ComputerphileParser.Sentence;
-            var parseResult = parser.ParseOrThrow("the potato stroked two furry dice.");
-        }   
+        }
+    }
+
+    [TestFixture]
+    public class Test
+    {
+        [Test]
+        public void Test123()
+        {
+            Assert.DoesNotThrow(() => CommandLineParser.commandLineParser.ParseOrThrow((string)null));
+        }
     }
 }
