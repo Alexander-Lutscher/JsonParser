@@ -5,5 +5,10 @@
     <IsPackable>false</IsPackable>
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\reference.txt">
+      <Link>reference.txt</Link>
+    </Content>
+  </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

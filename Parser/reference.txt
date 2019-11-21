@@ -1,8 +1,6 @@
-Liste von Argumenten (args)
+Return Type KeyValuePair<string, string> input type char
 1. NullCheck
 2. check for control char ('/', '-')
-3. Substring without control char
-4. index of '=' -> pos
-5. wenn kein '=' -> parse string to KeyValuePair<lowerInvariant:string,null>
-6. sonst trenne am '=' (links, rechts)
-7. parse KeyValuePair<lowerInvariant von links:string, rechts:string>
+3. wenn kein '=' -> parse string to KeyValuePair<lowerInvariant:string,null>
+4. sonst trenne am '=' (links, rechts)
+5. parse KeyValuePair<lowerInvariant von links:string, rechts:string>
